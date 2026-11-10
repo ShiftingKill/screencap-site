@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScreenCap</title>
+<meta name="description" content="Lightweight Windows screen capture with resizable camera frames and an on-screen marker.">
+<style>
+  :root { --bg:#0f1115; --panel:#181a1e; --line:#2a2d34; --text:#e8e8ea; --dim:#9aa0ab; --accent:#0a84ff; --hot:#ff2bff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.55 "Segoe UI", system-ui, sans-serif; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
+  header { padding:64px 0 28px; }
+  h1 { font-size:44px; margin:0 0 10px; letter-spacing:-.5px; }
+  h1 span { color:var(--accent); }
+  .lead { font-size:19px; color:var(--dim); max-width:680px; margin:0; }
+  img { max-width:100%; height:auto; display:block; border:1px solid var(--line); border-radius:10px; }
+  .hero { margin:8px 0 56px; }
+  section { padding:0 0 56px; }
+  h2 { font-size:26px; margin:0 0 6px; }
+  .sub { color:var(--dim); margin:0 0 22px; }
+  .row { display:grid; grid-template-columns:1.25fr 1fr; gap:32px; align-items:center; }
+  .row.flip { grid-template-columns:1fr 1.25fr; }
+  .row.flip .pic { order:2; }
+  ul { margin:0; padding-left:20px; }
+  li { margin:7px 0; }
+  li b { color:#fff; }
+  .bar { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:18px; overflow-x:auto; }
+  .bar img { border:0; border-radius:0; max-width:none; }
+  .keys { display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; }
+  .key { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:16px; }
+  kbd { background:#2c2f36; border:1px solid #4a4d55; border-radius:5px; padding:2px 7px; font:13px Consolas, monospace; }
+  .key p { margin:8px 0 0; color:var(--dim); }
+  .presets { max-width:330px; margin:0 auto; }
+  footer { border-top:1px solid var(--line); padding:22px 0 40px; color:var(--dim); font-size:14px; }
+  @media (max-width:760px) {
+    h1 { font-size:34px; }
+    .row, .row.flip, .keys { grid-template-columns:1fr; }
+    .row.flip .pic { order:0; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Screen<span>Cap</span></h1>
+    <p class="lead">A lightweight Windows capture tool: park little camera frames on your screen, mark up what is under them, and save exact-size PNGs without ever freezing the display.</p>
+  </header>
+
+  <div class="hero"><img src="img/hero.png" alt="ScreenCap toolbar, two camera frames and marker strokes over a chart" width="1600" height="900"></div>
+
+  <section>
+    <h2>One small toolbar</h2>
+    <p class="sub">Drag it anywhere. It reopens where you left it, or returns to the top-right of the main display if that monitor is gone.</p>
+    <div class="bar"><img src="img/toolbar.png" alt="ScreenCap toolbar"></div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="pic"><img src="img/camera.png" alt="A camera frame with its control bar" width="900" height="520"></div>
+      <div>
+        <h2>Cameras</h2>
+        <ul>
+          <li><b>Hollow frames.</b> Only a thin border exists, so you keep working inside the capture area.</li>
+          <li><b>As many as you like.</b> <b>+ Cam</b> on any frame spawns another of the same size.</li>
+          <li><b>Resize and move.</b> Drag the border to resize; it turns magenta when grabbed. Drag the bar to move.</li>
+          <li><b>Edges stick</b> to screen and taskbar edges, and a frame cannot be pushed off the desktop.</li>
+          <li><b>Clean shots.</b> The bar fades away when not hovered, and every border and bar is hidden at capture time.</li>
+          <li><b>Snap</b> one camera or <b>Snap all</b>; PNGs go to a folder and the last shot to the clipboard.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row flip">
+      <div class="pic"><img src="img/marker.png" alt="Marker strokes from fine to thick, fading out" width="900" height="520"></div>
+      <div>
+        <h2>Marker</h2>
+        <ul>
+          <li><b>Draw on anything</b> across every monitor, then click through again the moment you switch it off.</li>
+          <li><b>Fine point to thick marker:</b> 1 to 40 px, six colours.</li>
+          <li><b>Fade slider:</b> strokes disappear after 1 to 30 seconds.</li>
+          <li><b>Hold</b> keeps them until you press Clear.</li>
+          <li><b>Right-click</b> undoes the last stroke.</li>
+          <li>Strokes are part of the capture, so annotations are saved with the shot.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="pic"><img class="presets" src="img/presets.png" alt="Size preset list" width="330" height="826"></div>
+      <div>
+        <h2>Exact sizes</h2>
+        <ul>
+          <li><b>Pixel presets</b> from 640 &times; 360 up to 8K, including square, vertical and ultrawide.</li>
+          <li><b>Imperial:</b> photo sizes, Letter, Legal and Tabloid in inches.</li>
+          <li><b>Metric:</b> A7 to A3 and photo sizes in millimetres.</li>
+          <li><b>Custom</b> width &times; height in pixels.</li>
+          <li>Inch and mm sizes convert at 96 px per inch.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Hotkeys</h2>
+    <p class="sub">Work from any application.</p>
+    <div class="keys">
+      <div class="key"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>S</kbd><p>Snap all cameras</p></div>
+      <div class="key"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>D</kbd><p>Toggle the marker</p></div>
+      <div class="key"><kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>X</kbd><p>Clear the marker</p></div>
+    </div>
+  </section>
+
+  <footer>ScreenCap &middot; Windows 10/11 &middot; Python + Qt</footer>
+</div>
+</body>
+</html>
