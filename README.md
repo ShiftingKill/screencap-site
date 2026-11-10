@@ -20,6 +20,8 @@ land straight in a folder.
 - Edges stick to screen and taskbar edges; a camera cannot be pushed off the desktop.
 - `Name…` on a bar labels a camera (for example MNQ1minute); its PNGs are then saved as
   `MNQ1minute_<date>_<time>.png` with the name also stored inside the file.
+- `Snap all` with two or more cameras also saves one stitched image: the shots laid out as on
+  screen, with the empty space between them squeezed out.
 - `Layouts` saves the current cameras under a name (for example TradingLayout) and restores them
   later; positions are stored per monitor.
 - `Snap` saves one camera, `Snap all` saves every camera. Borders and bars of all cameras are
