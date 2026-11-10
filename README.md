@@ -10,6 +10,21 @@ land straight in a folder.
 
 ![ScreenCap toolbar](img/toolbar.png)
 
+## In use
+
+Four named cameras over NinjaTrader charts, saved as the layout `TradingLayout`:
+
+![Four cameras over NinjaTrader charts](img/live.png)
+
+`Snap all` saves each camera as its own PNG plus one stitched image, with the empty space
+between the cameras squeezed out:
+
+![Stitched image of all four cameras](img/stitched.png)
+
+Layouts are saved and loaded from the toolbar:
+
+![Layouts menu with TradingLayout selected](img/layouts.png)
+
 ## Features
 
 **Cameras**
