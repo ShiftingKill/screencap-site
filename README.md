@@ -22,10 +22,12 @@ land straight in a folder.
   hidden for the capture. The last shot is also copied to the clipboard.
 
 **Marker**
-- `Draw` turns on a marker across every monitor: six colours, 1-40 px tip.
+- `Draw` turns on a marker across every monitor: six colours plus a colour wheel for any other, 1-40 px tip.
 - Strokes fade after 1-30 s, or stay until cleared with `Hold`.
 - Right-click undoes the last stroke, Esc leaves draw mode.
 - Marker strokes are included in captures.
+
+![Colour wheel](img/wheel.png)
 
 **Hotkeys**: Ctrl+Alt+S snap all, Ctrl+Alt+D toggle draw, Ctrl+Alt+X clear marker.
 
