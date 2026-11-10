@@ -18,6 +18,8 @@ land straight in a folder.
 - Size drop-down: pixel presets up to 8K, inch and mm paper/photo sizes (at 96 px/in), or custom.
 - `+ Cam` on a bar spawns another camera of the same size.
 - Edges stick to screen and taskbar edges; a camera cannot be pushed off the desktop.
+- `Layouts` saves the current cameras under a name (for example TradingLayout) and restores them
+  later; positions are stored per monitor.
 - `Snap` saves one camera, `Snap all` saves every camera. Borders and bars of all cameras are
   hidden for the capture. The last shot is also copied to the clipboard.
 
