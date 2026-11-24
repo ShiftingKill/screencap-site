@@ -6,7 +6,7 @@ land straight in a folder.
 
 **Homepage:** https://shiftingkill.github.io/screencap-site/
 
-![ScreenCap+ overview](img/hero.png)
+![ScreenCap+ overview](img/screencap-menu.png)
 
 ![ScreenCap+ toolbar](img/toolbar.png)
 
