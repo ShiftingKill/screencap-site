@@ -32,6 +32,8 @@
   kbd { background:#2c2f36; border:1px solid #4a4d55; border-radius:5px; padding:2px 7px; font:13px Consolas, monospace; }
   .key p { margin:8px 0 0; color:var(--dim); }
   .presets { max-width:330px; margin:0 auto; }
+  .get { display:flex; align-items:center; gap:16px; margin:22px 0 0; color:var(--dim); }
+  .get img, .store img { border:0; border-radius:0; display:block; }
   footer { border-top:1px solid var(--line); padding:22px 0 40px; color:var(--dim); font-size:14px; }
   @media (max-width:760px) {
     h1 { font-size:34px; }
@@ -45,6 +47,7 @@
   <header>
     <h1>Screen<span>Cap+</span></h1>
     <p class="lead">A lightweight Windows capture tool: park little camera frames on your screen, mark up what is under them, and save exact-size PNGs without ever freezing the display.</p>
+    <p class="get"><a class="store" href="https://apps.microsoft.com/detail/9NF5XD65MQ2S?mode=direct"><img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" alt="Get ScreenCap+ from the Microsoft Store"></a><span>$0.99 &middot; Windows 10/11</span></p>
   </header>
 
   <div class="hero"><img src="img/screencap-menu.png" alt="ScreenCap+ toolbar with its menu open, two named camera frames and marker strokes over four charts" width="1920" height="1080"></div>
@@ -143,6 +146,8 @@
     <h2>Privacy: we collect nothing</h2>
     <p class="sub">ScreenCap+ has no accounts, analytics, telemetry or ads, and never connects to the internet. Captures go only to the folder you pick, settings stay on your PC. <a href="privacy.html" style="color:var(--accent)">Read the privacy policy</a>.</p>
   </section>
+
+  <section style="text-align:center"><h2>Get ScreenCap+</h2><p class="sub">$0.99 on the Microsoft Store. Updates install automatically.</p><div style="display:inline-block"><a class="store" href="https://apps.microsoft.com/detail/9NF5XD65MQ2S?mode=direct"><img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200" alt="Get ScreenCap+ from the Microsoft Store"></a></div></section>
 
   <footer>ScreenCap+ by Shifting &middot; Windows 10/11 &middot; <a href="privacy.html" style="color:var(--dim)">Privacy policy</a> &middot; No data collected</footer>
 </div>
