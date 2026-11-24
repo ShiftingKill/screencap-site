@@ -1,4 +1,4 @@
-# ScreenCap
+# ScreenCap+
 
 Lightweight Windows screen capture with resizable "camera" frames and an on-screen marker.
 Nothing freezes the screen: frames are hollow, the marker is a click-through overlay, and PNGs
@@ -6,9 +6,9 @@ land straight in a folder.
 
 **Homepage:** https://shiftingkill.github.io/screencap-site/
 
-![ScreenCap overview](img/hero.png)
+![ScreenCap+ overview](img/hero.png)
 
-![ScreenCap toolbar](img/toolbar.png)
+![ScreenCap+ toolbar](img/toolbar.png)
 
 ## In use
 
